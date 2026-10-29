@@ -1,0 +1,531 @@
+const DATA = {
+ "years": [
+  {
+   "revenue": 88568916.29,
+   "margin": 49858396.36,
+   "orders": 33580.0,
+   "units": 251870.0,
+   "customers": 27021.0,
+   "aov": 2637.55,
+   "margin_pct": 56.29,
+   "online": 11649619.8,
+   "store": 76919296.49,
+   "online_pct": 13.15,
+   "new_customers": 27021.0,
+   "delivery_days": 9.36,
+   "late_pct": 71.45,
+   "disc_lines_pct": 60.96,
+   "year": 2017
+  },
+  {
+   "revenue": 118216871.82,
+   "margin": 66126531.23,
+   "orders": 40778.0,
+   "units": 304954.0,
+   "customers": 31350.0,
+   "aov": 2899.04,
+   "margin_pct": 55.94,
+   "online": 17757778.18,
+   "store": 100459093.64,
+   "online_pct": 15.02,
+   "new_customers": 20244.0,
+   "delivery_days": 6.79,
+   "late_pct": 35.48,
+   "disc_lines_pct": 61.03,
+   "year": 2018
+  },
+  {
+   "revenue": 145860092.46,
+   "margin": 81505976.66,
+   "orders": 50184.0,
+   "units": 372997.0,
+   "customers": 36274.0,
+   "aov": 2906.51,
+   "margin_pct": 55.88,
+   "online": 24378698.66,
+   "store": 121481393.8,
+   "online_pct": 16.71,
+   "new_customers": 14582.0,
+   "delivery_days": 4.99,
+   "late_pct": 11.26,
+   "disc_lines_pct": 61.14,
+   "year": 2019
+  },
+  {
+   "revenue": 267576383.13,
+   "margin": 149111351.18,
+   "orders": 97514.0,
+   "units": 730777.0,
+   "customers": 54065.0,
+   "aov": 2743.98,
+   "margin_pct": 55.73,
+   "online": 52243146.91,
+   "store": 215333236.22,
+   "online_pct": 19.52,
+   "new_customers": 13094.0,
+   "delivery_days": 4.23,
+   "late_pct": 4.55,
+   "disc_lines_pct": 61.33,
+   "year": 2020
+  },
+  {
+   "revenue": 315417279.21,
+   "margin": 175870872.95,
+   "orders": 116481.0,
+   "units": 872696.0,
+   "customers": 58508.0,
+   "aov": 2707.89,
+   "margin_pct": 55.76,
+   "online": 64654973.9,
+   "store": 250762305.31,
+   "online_pct": 20.5,
+   "new_customers": 6206.0,
+   "delivery_days": 4.05,
+   "late_pct": 3.55,
+   "disc_lines_pct": 61.24,
+   "year": 2021
+  },
+  {
+   "revenue": 125894308.35,
+   "margin": 70442167.52,
+   "orders": 52775.0,
+   "units": 399084.0,
+   "customers": 36888.0,
+   "aov": 2385.49,
+   "margin_pct": 55.95,
+   "online": 30503889.47,
+   "store": 95390418.88,
+   "online_pct": 24.23,
+   "new_customers": 1571.0,
+   "delivery_days": 3.87,
+   "late_pct": 2.91,
+   "disc_lines_pct": 61.21,
+   "year": 2022
+  },
+  {
+   "revenue": 219656940.68,
+   "margin": 122599255.66,
+   "orders": 87372.0,
+   "units": 659092.0,
+   "customers": 49396.0,
+   "aov": 2514.04,
+   "margin_pct": 55.81,
+   "online": 88541072.62,
+   "store": 131115868.06,
+   "online_pct": 40.31,
+   "new_customers": 1780.0,
+   "delivery_days": 3.33,
+   "late_pct": 0.92,
+   "disc_lines_pct": 60.98,
+   "year": 2023
+  },
+  {
+   "revenue": 444517000.01,
+   "margin": 248303177.07,
+   "orders": 193751.0,
+   "units": 1465402.0,
+   "customers": 66877.0,
+   "aov": 2294.27,
+   "margin_pct": 55.86,
+   "online": 240159712.82,
+   "store": 204357287.19,
+   "online_pct": 54.03,
+   "new_customers": 2249.0,
+   "delivery_days": 3.01,
+   "late_pct": 0.54,
+   "disc_lines_pct": 61.04,
+   "year": 2024
+  },
+  {
+   "revenue": 318425693.01,
+   "margin": 178196647.04,
+   "orders": 159695.0,
+   "units": 1206791.0,
+   "customers": 62337.0,
+   "aov": 1993.96,
+   "margin_pct": 55.96,
+   "online": 193886765.76,
+   "store": 124538927.25,
+   "online_pct": 60.89,
+   "new_customers": 1088.0,
+   "delivery_days": 2.87,
+   "late_pct": 0.32,
+   "disc_lines_pct": 61.09,
+   "year": 2025
+  },
+  {
+   "revenue": 83795411.38,
+   "margin": 46916528.66,
+   "orders": 43771.0,
+   "units": 331195.0,
+   "customers": 31576.0,
+   "aov": 1914.4,
+   "margin_pct": 55.99,
+   "online": 49338850.3,
+   "store": 34456561.08,
+   "online_pct": 58.88,
+   "new_customers": 228.0,
+   "delivery_days": 2.85,
+   "late_pct": 0.28,
+   "disc_lines_pct": 60.99,
+   "year": 2026
+  }
+ ],
+ "monthly": [
+  {
+   "month": "2023-01",
+   "revenue": 7069389.0
+  },
+  {
+   "month": "2023-02",
+   "revenue": 10924933.0
+  },
+  {
+   "month": "2023-03",
+   "revenue": 7483494.0
+  },
+  {
+   "month": "2023-04",
+   "revenue": 5545101.0
+  },
+  {
+   "month": "2023-05",
+   "revenue": 15900545.0
+  },
+  {
+   "month": "2023-06",
+   "revenue": 18650562.0
+  },
+  {
+   "month": "2023-07",
+   "revenue": 18636773.0
+  },
+  {
+   "month": "2023-08",
+   "revenue": 20116688.0
+  },
+  {
+   "month": "2023-09",
+   "revenue": 23944731.0
+  },
+  {
+   "month": "2023-10",
+   "revenue": 25849554.0
+  },
+  {
+   "month": "2023-11",
+   "revenue": 27829955.0
+  },
+  {
+   "month": "2023-12",
+   "revenue": 37705215.0
+  },
+  {
+   "month": "2024-01",
+   "revenue": 36052397.0
+  },
+  {
+   "month": "2024-02",
+   "revenue": 49140940.0
+  },
+  {
+   "month": "2024-03",
+   "revenue": 29700052.0
+  },
+  {
+   "month": "2024-04",
+   "revenue": 19222003.0
+  },
+  {
+   "month": "2024-05",
+   "revenue": 44587668.0
+  },
+  {
+   "month": "2024-06",
+   "revenue": 46105405.0
+  },
+  {
+   "month": "2024-07",
+   "revenue": 34978419.0
+  },
+  {
+   "month": "2024-08",
+   "revenue": 35682307.0
+  },
+  {
+   "month": "2024-09",
+   "revenue": 36801731.0
+  },
+  {
+   "month": "2024-10",
+   "revenue": 36552566.0
+  },
+  {
+   "month": "2024-11",
+   "revenue": 34153388.0
+  },
+  {
+   "month": "2024-12",
+   "revenue": 41540125.0
+  },
+  {
+   "month": "2025-01",
+   "revenue": 34197819.0
+  },
+  {
+   "month": "2025-02",
+   "revenue": 40800154.0
+  },
+  {
+   "month": "2025-03",
+   "revenue": 22604708.0
+  },
+  {
+   "month": "2025-04",
+   "revenue": 11939467.0
+  },
+  {
+   "month": "2025-05",
+   "revenue": 28979003.0
+  },
+  {
+   "month": "2025-06",
+   "revenue": 27454630.0
+  },
+  {
+   "month": "2025-07",
+   "revenue": 23332110.0
+  },
+  {
+   "month": "2025-08",
+   "revenue": 24849589.0
+  },
+  {
+   "month": "2025-09",
+   "revenue": 25110269.0
+  },
+  {
+   "month": "2025-10",
+   "revenue": 25116708.0
+  },
+  {
+   "month": "2025-11",
+   "revenue": 25131050.0
+  },
+  {
+   "month": "2025-12",
+   "revenue": 28910186.0
+  },
+  {
+   "month": "2026-01",
+   "revenue": 26420004.0
+  },
+  {
+   "month": "2026-02",
+   "revenue": 34494277.0
+  },
+  {
+   "month": "2026-03",
+   "revenue": 17353943.0
+  },
+  {
+   "month": "2026-04",
+   "revenue": 5527188.0
+  }
+ ],
+ "season": [
+  8.93,
+  11.3,
+  6.19,
+  3.67,
+  8.66,
+  8.9,
+  7.44,
+  8.1,
+  8.36,
+  8.75,
+  8.76,
+  10.96
+ ],
+ "weekday2025": [
+  414.0,
+  705.0,
+  83.0,
+  333.0,
+  416.0,
+  540.0,
+  580.0
+ ],
+ "country": [
+  {
+   "country": "United States",
+   "y2023": 72158821.0,
+   "y2025": 61334713.0
+  },
+  {
+   "country": "Germany",
+   "y2023": 13607048.0,
+   "y2025": 15747837.0
+  },
+  {
+   "country": "Canada",
+   "y2023": 12950470.0,
+   "y2025": 14367721.0
+  },
+  {
+   "country": "United Kingdom",
+   "y2023": 11876129.0,
+   "y2025": 10381282.0
+  },
+  {
+   "country": "Australia",
+   "y2023": 8114948.0,
+   "y2025": 8959405.0
+  },
+  {
+   "country": "Netherlands",
+   "y2023": 5575533.0,
+   "y2025": 6776654.0
+  },
+  {
+   "country": "France",
+   "y2023": 3958582.0,
+   "y2025": 4428231.0
+  },
+  {
+   "country": "Italy",
+   "y2023": 2874337.0,
+   "y2025": 2543085.0
+  }
+ ],
+ "category": [
+  {
+   "category": "Computers",
+   "revenue": 113112216.0,
+   "margin_pct": 56.2,
+   "growth": 14.4
+  },
+  {
+   "category": "Cell phones",
+   "revenue": 59754579.0,
+   "margin_pct": 54.0,
+   "growth": 48.0
+  },
+  {
+   "category": "Home Appliances",
+   "revenue": 54115071.0,
+   "margin_pct": 55.3,
+   "growth": 138.4
+  },
+  {
+   "category": "TV and Video",
+   "revenue": 41323804.0,
+   "margin_pct": 56.9,
+   "growth": 78.3
+  },
+  {
+   "category": "Music, Movies and Audio Books",
+   "revenue": 21768556.0,
+   "margin_pct": 58.6,
+   "growth": 60.5
+  },
+  {
+   "category": "Cameras and camcorders",
+   "revenue": 18765677.0,
+   "margin_pct": 58.2,
+   "growth": 23.9
+  },
+  {
+   "category": "Audio",
+   "revenue": 6847569.0,
+   "margin_pct": 55.1,
+   "growth": 64.6
+  },
+  {
+   "category": "Games and Toys",
+   "revenue": 2738220.0,
+   "margin_pct": 52.0,
+   "growth": 63.1
+  }
+ ],
+ "bridge": {
+  "orders": 82.8,
+  "units": 83.1,
+  "price": -20.2,
+  "revenue": 45.0,
+  "orders24": -17.6,
+  "revenue24": -28.4
+ },
+ "customers": {
+  "registered": 104990,
+  "ordered": 88063,
+  "never": 16927,
+  "lapsed_valuable": 12908,
+  "lapsed_revenue": 217377176.0
+ },
+ "retention": [
+  {
+   "year": 2017,
+   "active": 27021,
+   "retained_pct": 41.1
+  },
+  {
+   "year": 2018,
+   "active": 31350,
+   "retained_pct": 46.8
+  },
+  {
+   "year": 2019,
+   "active": 36274,
+   "retained_pct": 69.2
+  },
+  {
+   "year": 2020,
+   "active": 54065,
+   "retained_pct": 74.0
+  },
+  {
+   "year": 2021,
+   "active": 58508,
+   "retained_pct": 48.0
+  },
+  {
+   "year": 2022,
+   "active": 36888,
+   "retained_pct": 66.8
+  },
+  {
+   "year": 2023,
+   "active": 49396,
+   "retained_pct": 87.7
+  },
+  {
+   "year": 2024,
+   "active": 66877,
+   "retained_pct": 81.7
+  }
+ ],
+ "workday": {
+  "working": 770914.0,
+  "off": 1095845.0
+ },
+ "discount": {
+  "lines_pct": 61.1,
+  "avg_pct": 9.7,
+  "cost": 134155797.0,
+  "by_qty": [
+   61.0,
+   61.1,
+   61.1,
+   61.2,
+   61.3,
+   61.1,
+   60.8,
+   61.6,
+   61.0,
+   61.6
+  ]
+ },
+ "total_revenue": 2127928896.0,
+ "as_of": "2026-04-20"
+};

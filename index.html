@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Northgate Performance Review</title>
+<meta name="description" content="Executive dashboard for Northgate Retail: revenue, channels, pricing, customers, stores and delivery, 2017 to April 2026.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <p class="kicker">Northgate Retail · Executive review</p>
+    <h1>The business sold less, at lower prices, to a customer base it is no longer growing</h1>
+    <p class="sub">Every order and order line from January 2017 to 20 April 2026. Figures are in US dollars. 2026 is a partial year and is shown as year to date. Hover any chart for exact values; each chart has a table view.</p>
+    <div class="row"><button class="ghost" id="theme">Theme: auto</button></div>
+  </div>
+</header>
+<main class="wrap">
+  <section id="kpis" class="kpis" aria-label="Headline numbers, 2025 against 2024"></section>
+
+  <section class="sec">
+    <h2>1 · Revenue and channel</h2>
+    <div class="grid">
+      <article class="card" id="c-revenue"></article>
+      <article class="card" id="c-channel"></article>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>2 · Why 2025 fell</h2>
+    <div class="grid">
+      <article class="card" id="c-bridge"></article>
+      <article class="card" id="c-monthly"></article>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>3 · The calendar</h2>
+    <div class="grid">
+      <article class="card" id="c-season"></article>
+      <article class="card" id="c-weekday"></article>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>4 · Where the money comes from</h2>
+    <div class="grid">
+      <article class="card" id="c-country"></article>
+      <article class="card" id="c-category"></article>
+    </div>
+  </section>
+
+  <section class="sec">
+    <h2>5 · Customers and service</h2>
+    <div class="grid">
+      <article class="card" id="c-newcust"></article>
+      <article class="card" id="c-delivery"></article>
+    </div>
+    <div class="grid" id="c-facts"></div>
+  </section>
+
+  <section class="sec">
+    <h2>6 · What to do</h2>
+    <ol class="actions" id="actions"></ol>
+  </section>
+
+  <section class="sec notes">
+    <h2>About the data</h2>
+    <ul id="notes"></ul>
+  </section>
+</main>
+<div id="tip" class="tip" role="tooltip" hidden></div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
